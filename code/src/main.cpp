@@ -1,15 +1,10 @@
-#include <Arduino.h>
-// #include <FastLED.h>
-
 #include <Adafruit_NeoPixel.h>
-#include <Wire.h>  // Only needed for Arduino 1.6.5 and earlier
-
-#include "SSD1306Wire.h"  // legacy: #include "SSD1306.h"
+#include <Arduino.h>
+#include <SSD1306Wire.h>
+#include <Wire.h>
 
 #define NUM_LEDS 1
 #define DATA_PIN 2
-
-// CRGB leds[NUM_LEDS];
 
 Adafruit_NeoPixel pixels(NUM_LEDS, DATA_PIN, NEO_GRB + NEO_KHZ800);
 
